@@ -11,7 +11,7 @@ if openai.api_key is None:
     print("ERROR: Please set your OpenAI API key as an environment variable named 'OPENAI_API_KEY'")
     exit(1)
 
-model_engine = "text-davinci-003"  # Choose the GPT-3 model you want to use
+model_engine = "gpt-3.5-turbo-instruct"  # Choose the GPT-3 model you want to use
 
 # Define the input data
 diff = subprocess.check_output(["git", "diff", "--cached"]).decode('utf-8')
